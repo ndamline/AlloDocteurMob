@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    >
+
+    <TextView
+        android:id="@+id/textViewm"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/remplir_les_champs_suisvants"
+        tools:ignore="HardcodedText,MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/nomViewm"
+        android:layout_width="42dp"
+        android:layout_height="23dp"
+        android:layout_below="@+id/textViewm"
+        android:layout_toLeftOf="@+id/telViewm"
+        android:layout_toStartOf="@+id/telViewm"
+        android:text="@string/nom"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="98dp"
+        tools:ignore="MissingConstraints"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editNomm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nomViewm"
+        android:layout_alignBottom="@+id/nomViewm"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="98dp" />
+
+    <TextView
+        android:id="@+id/prenomViewm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/nomViewm"
+        android:text="@string/prenom"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="158dp"
+        tools:ignore="MissingConstraints"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editPrenom"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignLeft="@+id/editNomm"
+        android:layout_alignStart="@+id/editNomm"
+        android:layout_below="@+id/prenomViewm"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPersonName"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="148dp" />
+
+    <TextView
+        android:id="@+id/telViewm"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_alignBottom="@+id/editText5"
+        android:layout_toLeftOf="@+id/editText4"
+        android:layout_toStartOf="@+id/editText4"
+        android:text="@string/telephone"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints,UnknownId"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <EditText
+        android:id="@+id/editTel"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="phone"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <TextView
+        android:id="@+id/emailView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="246dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="85dp"
+        tools:layout_editor_absoluteY="243dp" />
+
+    <TextView
+        android:id="@+id/mdpView"
+        android:layout_width="wrap_content"
+        android:layout_height="22dp"
+        android:text="@string/mot_de_passe"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <EditText
+        android:id="@+id/editMdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="340dp" />
+
+    <Button
+        android:id="@+id/enregistrerbtn"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background"
+        android:text="@string/creer_compte"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="232dp"
+        tools:layout_editor_absoluteY="447dp" />
+
+    <TextView
+        android:id="@+id/datenView"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:text="@string/date_de_naissance"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <EditText
+        android:id="@+id/editDaten"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:inputType="date"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="132dp"
+        tools:layout_editor_absoluteY="288dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Confirmez votre mot de passe"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="392dp"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="156dp"
+        android:layout_height="25dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="212dp"
+        tools:layout_editor_absoluteY="386dp"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/border"
+        />
+
+</android.support.constraint.ConstraintLayout>
